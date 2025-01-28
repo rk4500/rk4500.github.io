@@ -1,0 +1,114 @@
+*{
+    font-family: Montserrat;
+    font-size: 16px;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: black;
+}
+div{
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
+}
+.landing-container{
+    display: flex;
+}
+.navbar{
+    position: fixed;
+    height: 20px;
+    width: 100vw;
+    padding: 5px 0;
+    z-index: 1;
+}
+.landing{
+    height: 100vh;
+    width: 100vw;
+}
+.landing-backdrop {
+    background-image: url("/img/tempbackground.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+  }
+
+  .landing-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .maintext {
+    font-size: 50px;
+    font-weight: 700;
+    flex-direction: row;
+  }
+  .maintext img {
+    width: 100%;
+    padding-bottom: 75px;
+  }
+  .meimg {
+    width: 25%;
+  }
+  .myname {
+    width: 20%;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .about {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    height: 80%;
+}
+  .text {
+    grid-area: 1 / 1 / 1 / 1;   
+}
+#exampleimg {
+    grid-area: 2 / 3 / 2 / 3; 
+    height: 100%;
+    width: 100%;
+}
+#drone-text {
+    border: 2px solid black;
+    background-color: transparent !important;
+}
+#drone-text:hover {
+    border-radius: 5px;
+    border: 2px solid lightseagreen;
+    transition: 0.3s ease-in-out;
+    background-color: transparent !important;
+}
