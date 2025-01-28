@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <script src="/lib/anseki-leader-line-6c26a9d/leader-line.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 </head>
 <body>
-    <div class="navbar jcc aic">marc is a clown</div>
+    <div class="navbar aic">
+        <div class="icon"><a href="site.html"></a></div>
+        <div class="nav-pages"><a href="interestsHobbies.html">Interests and Hobbies</a><a href="learnings.html">DigiLit Learnings</a><a href="skillAchievements.html">Skills and Achievements</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+        </div>
+    </div>
     <div class="landing">
         <div class="landing-backdrop"></div>
         <div class="landing-text aic jcc">
             <div class="maintext jcc aic">
-                <div class="myname">Hi, I'm Krishna</div>
+                <div class="intro jcc">
+                    <div class="myname">Hi, I'm Krishna</div>
+                    <div class="aboutme">
+                        <p>Full Stack Dev &#x2022 Drones &#x2022 AR/VR
+                    </div>
+                </div>
+                
                 <div class="meimg"><img src="/img/1000041624.png" alt=""></div>
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="clear"></div>
+    <div class="about gradient">
         <div class="title">ABOUT</div>
         <div class="content">
-            <div class="text" id="text">        <p> I am a first year student studying Computer Science. I'm passionate about <span id="drone-text">drones and AR/VR.</span><br> I enjoy squash, surfing and messing around with Linux in my free time. and I excel in [list key skills]. My journey has been enriched with accomplishments in [mention key achievements]. I aspire to [your aspirations or goals]. </p></div>
+            <div class="text" id="text"> <p> I'm a first year student studying Computer Science. I'm passionate about <span id="drone-text">drones and AR/VR.</span><br> I enjoy squash, surfing and messing around with Linux in my free time. and I excel in [list key skills]. My journey has been enriched with accomplishments in [mention key achievements]. I aspire to [your aspirations or goals]. </p></div>
             <div id="exampleimg"><img src="/img/drone.jpg" alt=""></div>
         </div>
     </div>
-    <script>
+    <!-- <script>
         var line = new LeaderLine(
             LeaderLine.mouseHoverAnchor(document.getElementById('drone-text'), 'draw'),
             document.getElementById('exampleimg')
@@ -36,14 +50,14 @@
             endSocket: 'top',
             endPlug: 'behind'
         });
-    </script>
-    <script>
+    </script> -->
+    <!-- <script>
         // This tween will rotate an element with a class of .my-element
         gsap.to('.myname', {
          rotation: 360,
          duration: 2,
          ease: 'bounce.out'
-        })
+        }) -->
        </script>
 </body>
 </html>
