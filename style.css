@@ -1,3 +1,4 @@
+/* GENERAL */
 *{
     font-family: Montserrat;
     font-size: 16px;
@@ -19,10 +20,8 @@ div{
 .aic{
     align-items: center;
 } 
-.landing {
-    position: sticky;
-    z-index: -1;
-}
+
+/* NAVIGATION */
 .navbar{
     position: fixed;
     height: 70px;
@@ -36,6 +35,54 @@ div{
 .navbar a {
     padding: 0px 10px;
     text-decoration: none;
+}
+#nav-burger {
+    display: none;
+}
+#nav-burger div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+    opacity: 0;
+}
+.open .bar3 {
+    transform: rotate(45deg) translate(-6px, -8px);
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+}
+.mobile-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: calc(100vh - 70px); */
+    position: absolute;
+    /* top: 70px; */
+    height: 100vh;
+    top: 20px;
+    left: 100%;
+    transition: 0.4s ease-in-out;
+}
+.open .mobile-menu {
+    /* transform: translateX(-100%); */
+    left: 0px;
+}
+.mobile-menu li {
+    padding: 5px 0px;
+}
+
+/* LANDING */
+.landing {
+    position: sticky;
+    z-index: -1;
 }
 .icon {
     height: 60px;
@@ -173,12 +220,14 @@ div{
         flex-direction: column;
         justify-content: start;
     }
-    /* .meimg {
-        position: absolute;
-        top: 0;
-    } */
     .meimg img {
         margin-top: 20px;
         content: url("/img/mecropped.png");
+    }
+    .nav-pages {
+        display: none;
+    }
+    #nav-burger {
+        display: block;
     }
 } 
