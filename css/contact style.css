@@ -22,3 +22,17 @@
     font-weight: 600;
     padding: 10px 0;
 }
+
+@media (max-width: 900px) {
+    .contact {
+        justify-content: start;
+        padding-top: 70px;
+    }
+    .title {
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    .details {
+        font-size: 1.1rem;
+    }
+}
