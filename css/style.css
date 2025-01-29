@@ -191,19 +191,20 @@ div{
     z-index: -1;
 }
 .gradient {
-    /* background-image: linear-gradient(to bottom, black, rgb(23, 23, 103)); */
-    /* background-image: radial-gradient(rgb(116, 1, 183), black 75%); */
-    background: radial-gradient(rgb(116, 1, 183), black 75%),
+    /* background: radial-gradient(rgb(116, 1, 183), black 75%),
     linear-gradient(to bottom left, rgb(116, 1, 183), transparent),
     linear-gradient(to top right, rgb(8, 100, 70), rgb(114, 29, 185)),
     radial-gradient(rgb(9, 85, 171), transparent),
-    linear-gradient(to bottom, black, transparent);
+    linear-gradient(to bottom, black, transparent); */
     background-blend-mode: screen;
-    /* background-image: linear-gradient(180deg, black 0%, rgb(113, 196, 255) 60%, rgb(116, 1, 183) 100%);  */
-/* , rgb(113, 196, 255) 100% */
+    background: linear-gradient(to bottom, black, purple),
+    radial-gradient(orange, darkred);
+}
+.about .title {
+    margin-top: 15px;
 }
 .title {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 .content {
