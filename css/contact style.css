@@ -1,0 +1,24 @@
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/peakpx.jpg");
+    backdrop-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+}
+.title {
+    border-bottom: 2px solid white;
+    z-index: 1;
+}
+.contact-info {
+    flex-direction: column;
+    padding-top: 30px;
+}
+.details {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 0;
+}

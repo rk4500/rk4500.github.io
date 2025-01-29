@@ -31,10 +31,13 @@ div{
     justify-content: space-between;
     padding: 0 20px;
     /* background-color: rgba(59, 62, 142, 0.422); */
+    background-color: rgba(0, 0, 0, 0.67);
+    backdrop-filter: blur(5px);
 }
 .navbar a {
     padding: 0px 10px;
     text-decoration: none;
+    font-weight: 600;
 }
 #nav-burger {
     display: none;
@@ -71,6 +74,7 @@ div{
     padding-top: 70px;
     transition: 0.4s ease-in-out;
     background-color: rgba(0, 0, 0, 0.647);
+    z-index: -1;
 }
 .open .mobile-menu {
     /* transform: translateX(-100%); */
@@ -123,7 +127,6 @@ div{
     z-index: 0;
 
 }
-
 .landing-text {
     background-color: rgba(0,0,0, 0.4);
     color: white;
@@ -173,10 +176,29 @@ div{
     padding-right: 15px; */
     padding: 70px 15px 0 15px ;
     overflow: hidden;
+    background-image: url("/img/peakpx.jpg");
+    backdrop-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+.blur {
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    z-index: -1;
 }
 .gradient {
     /* background-image: linear-gradient(to bottom, black, rgb(23, 23, 103)); */
-    background-image: radial-gradient(rgb(116, 1, 183), black 75%);
+    /* background-image: radial-gradient(rgb(116, 1, 183), black 75%); */
+    background: radial-gradient(rgb(116, 1, 183), black 75%),
+    linear-gradient(to bottom left, rgb(116, 1, 183), transparent),
+    linear-gradient(to top right, rgb(8, 100, 70), rgb(114, 29, 185)),
+    radial-gradient(rgb(9, 85, 171), transparent),
+    linear-gradient(to bottom, black, transparent);
+    background-blend-mode: screen;
     /* background-image: linear-gradient(180deg, black 0%, rgb(113, 196, 255) 60%, rgb(116, 1, 183) 100%);  */
 /* , rgb(113, 196, 255) 100% */
 }
@@ -193,23 +215,28 @@ div{
 .text {
     grid-area: 1 / 1 / 1 / 1;   
 }
-#exampleimg {
+#droneimg {
     grid-area: 2 / 3 / 2 / 3; 
     height: 100%;
     width: 100%;
 }
-#exampleimg img {
+.grid-img img {
     width: fit-content;
     height: fit-content;
     max-width: 100%;
 }
+#origamiimg {
+    grid-area: 3 / 2 / 3 / 2; 
+    height: 100%;
+    width: 100%;
+}
 #drone-text {
-    border: 2px solid black !important;
+    border: 2px solid transparent !important;
     background-color: transparent !important;
 }
 #drone-text:hover {
     border-radius: 5px;
-    border: 2px solid lightseagreen;
+    border: 2px solid lightseagreen !important;
     transition: 0.3s ease-in-out;
     background-color: transparent !important;
 }
@@ -229,7 +256,7 @@ div{
     }
     .meimg img {
         margin-top: 20px;
-        content: url("/img/mecropped.png");
+        content: url("/img/meBetter.png");
     }
     .nav-pages {
         display: none;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="navbar aic">
-        <div class="icon"><a href="site.html"></a></div>
-        <div class="nav-pages"><a href="interestsHobbies.html">Interests and Hobbies</a><a href="learnings.html">DigiLit Learnings</a><a href="skillAchievements.html">Skills and Achievements</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+        <div class="icon"><a href="index.html"></a></div>
+        <div class="nav-pages"><a href="interestsHobbies.html">Interests and Hobbies</a><a href="learnings.html">Digital Literacy</a><a href="skillAchievements.html">Skills and Achievements</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
         </div>
         <div id="nav-burger" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
@@ -22,7 +22,7 @@
             <div class="bar3"></div>
             <ul class="mobile-menu">
                 <li><a href="interestsHobbies.html">Interests and Hobbies</a></li>
-                <li><a href="learnings.html">DigiLit Learnings</a></li>
+                <li><a href="learnings.html">Digital Literacy</a></li>
                 <li><a href="skillAchievements.html">Skills and Achievements</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -40,19 +40,23 @@
                     </div>
                 </div>
                 
-                <div class="meimg"><img src="/img/1000041624.png" alt=""></div>
+                <div class="meimg"><img src="/img/meBetter.png" alt=""></div>
             </div>
         </div>
     </div>
     <div class="clear"></div>
-    <div class="about gradient">
+    <div class="about">
+        <div class="blur"></div>
         <div class="title">ABOUT</div>
         <div class="content">
-            <div class="text" id="text"> <p> I'm a first year student studying Computer Science. I'm passionate about <span id="drone-text">drones and AR/VR.</span><br> I enjoy squash, surfing and messing around with Linux in my free time. and I excel in [list key skills]. My journey has been enriched with accomplishments in [mention key achievements]. I aspire to [your aspirations or goals]. </p></div>
-            <div id="exampleimg"><img src="/img/drone.jpg" alt=""></div>
+            <div class="text" id="text"><p>
+                I'm a first year computer science student studying at FLAME University. I love working on<span id="drone-text">drones, coding and experimenting with AR/VR.</span><br>I enjoy squash, surfing and some origami or sculpture in my free time. My interest in technology has taken me on a facinating journey with some really cool <span id="project-text">projects along the way.</span>Here at FLAME I plan to utilize the flexible learning process to expand my skillset and aspire to build a business with the help of those skills.
+            </p></div>
+            <div id="droneimg" class="grid-img"><img src="/img/my drone.png" alt=""></div>
+            <div id="origamiimg" class="grid-img"><img src="img/origami.png" alt=""></div>
         </div>
     </div>
-    <!-- <script>
+    <script>
         var line = new LeaderLine(
             LeaderLine.mouseHoverAnchor(document.getElementById('drone-text'), 'draw'),
             document.getElementById('exampleimg')
@@ -62,7 +66,7 @@
             endSocket: 'top',
             endPlug: 'behind'
         });
-    </script> -->
+    </script>
     <!-- <script>
         // This tween will rotate an element with a class of .my-element
         gsap.to('.myname', {
