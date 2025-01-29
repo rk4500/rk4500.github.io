@@ -205,10 +205,6 @@ div{
     radial-gradient(orange, darkred); */
     background: linear-gradient(310deg, #2B3D4F, black)
 }
-.about .title {
-    /* margin-top: 15px; */
-    /* margin-left: 30px; */
-}
 .title {
     font-size: 2.5rem;
     font-weight: 900;
@@ -304,51 +300,9 @@ body:has(#literacy-text:hover) #digiimg {
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 1000px) {
-    .maintext {
-        flex-direction: column;
-        justify-content: start;
-    }
-    .intro {
-        width: 90%;
-    }
-    .meimg {
-        width: 90%;
-    }
-    .meimg img {
-        margin-top: 20px;
-        content: url("/img/meBetter.png");
-    }
-    .nav-pages {
-        display: none;
-    }
-    #nav-burger {
-        display: block;
-    }
-    .images {
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-columns: 100%;
-    }
-    .about {
-        height: auto;
-    }
-}
-@media (max-width: 700px) {
-    .images {
-        display: none;
-    }
-    .about .title {
-        font-size: 1.6rem;
-    }
-    .text {
-        font-size: 1rem;
-    }
-}
 
 
-
-
-
+/* Tooptip */
 [data-tooltip] {
   position: relative;
   cursor: pointer;
@@ -432,20 +386,84 @@ body:has(#literacy-text:hover) #digiimg {
   -webkit-transform: translate(-8px, -50%);
           transform: translate(-8px, -50%);
 }
-[data-tooltip][data-flow="right"]::before {
-  top: 50%;
-  border-left-width: 0;
-  border-right-color: #4621FF;
-  right: calc(0em - 5px);
-  -webkit-transform: translate(8px, -50%);
-          transform: translate(8px, -50%);
-}
-[data-tooltip][data-flow="right"]::after {
-  top: 50%;
-  left: calc(100% + 5px);
-  -webkit-transform: translate(8px, -50%);
-          transform: translate(8px, -50%);
-}
+/* Right moved to media query section */
 [data-tooltip=""]::after, [data-tooltip=""]::before {
   display: none !important;
 }
+
+
+/* Responsive UI */
+@media (min-width: 1001px) {
+    [data-tooltip][data-flow="right"]::before {
+        top: 50%;
+        border-left-width: 0;
+        border-right-color: #4621FF;
+        right: calc(0em - 5px);
+        -webkit-transform: translate(8px, -50%);
+                transform: translate(8px, -50%);
+      }
+      [data-tooltip][data-flow="right"]::after {
+        top: 50%;
+        left: calc(100% + 5px);
+        -webkit-transform: translate(8px, -50%);
+                transform: translate(8px, -50%);
+      }
+}
+@media (max-width: 1000px) {
+    .maintext {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .intro {
+        width: 90%;
+    }
+    .meimg {
+        width: 90%;
+    }
+    .meimg img {
+        margin-top: 20px;
+        content: url("/img/meBetter.png");
+    }
+    .nav-pages {
+        display: none;
+    }
+    #nav-burger {
+        display: block;
+    }
+    .images {
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+    }
+    .about {
+        height: auto;
+    }
+}
+@media (max-width: 700px) {
+    .images {
+        display: none;
+    }
+    .about .title {
+        font-size: 1.6rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    [data-tooltip]:not([data-flow])::before,
+[data-tooltip][data-flow="right"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #4621FF;
+}
+[data-tooltip]:not([data-flow])::after,
+[data-tooltip][data-flow="right"]::after {
+  bottom: calc(100% + 5px);
+}
+[data-tooltip]:not([data-flow])::before, [tooltip]:not([data-flow])::after,
+[data-tooltip][data-flow="right"]::before,
+[data-tooltip][data-flow="right"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, -4px);
+          transform: translate(-50%, -4px);
+}
+}
+
