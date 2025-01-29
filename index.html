@@ -45,18 +45,28 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div class="about gradient">
-        <!-- <div class="blur"></div> -->
-        <div class="title">ABOUT</div>
+    <div class="about gradient jcc aic">
+        <div class="blur"></div>
         <div class="content">
-            <div class="text" id="text"><p>
-                I'm a first year computer science student studying at FLAME University. I love working on<span id="drone-text">drones, coding and experimenting with AR/VR.</span><br>I enjoy squash, surfing and some origami or sculpture in my free time. My interest in technology has taken me on a facinating journey with some really cool <span id="project-text">projects along the way.</span>Here at FLAME I plan to utilize the flexible learning process to expand my skillset and aspire to build a business with the help of those skills.
+            <div class="text" id="text"><div class="title">ABOUT</div><p>
+                I'm a first year computer science student studying at FLAME University. I love working on <a id="drone-text" href="interests.html" data-tooltip="Interests and Hobbies" data-flow="right">drones, coding and experimenting with AR/VR.</a> I enjoy squash, surfing and some origami or sculpture in my free time. <br><br> 
+                My interest in technology has taken me on a facinating journey with some really cool <a id="project-text" href="projects.html" data-tooltip="Projects" data-flow="right">projects</a> along the way. Here at FLAME I plan to utilize the flexible learning process to expand my <a id="skill-text" href="skills.html" data-tooltip="Skills and Achievements" data-flow="right">skillset</a> and aspire to build a business in the tech field with the help of those skills.
+                <br><br>
+                While I considered myself fairly proficient in navigating the digital world, I always strive in widen my knowledge, considering it is my future professional field. The <a id="literacy-text" href="literacy.html" data-tooltip="Digital Literacy" data-flow="right">Digital Literacy</a> course here at FLAME has greatly aided me in identifying the areas I lack in and helping me brush up on my existing skills.
             </p></div>
-            <div id="droneimg" class="grid-img"><img src="/img/my drone.png" alt=""></div>
-            <div id="origamiimg" class="grid-img"><img src="img/origami.png" alt=""></div>
+            <div class="images">
+                <div id="droneimg" class="grid-img"><img src="/img/myDrone.png" alt=""></div>
+            <div id="skillimg" class="grid-img"><img src="img/satTopPerformer.jpg" alt=""></div>
+            <div id="digiimg" class="grid-img"><img src="/img/digiLit.png" alt=""></div>
+                <div id="pcbimg" class="grid-img"><img src="img/pcb.png" alt=""></div>
+            </div>
+            <!-- <div class="images">
+                <div id="droneimg" class="grid-img"><img src="/img/digiLit.png" alt=""></div>
+                <div id="origamiimg" class="grid-img"><img src="img/pcb.png" alt=""></div>
+            </div> -->
         </div>
     </div>
-    <script>
+    <!-- <script>
         var line = new LeaderLine(
             LeaderLine.mouseHoverAnchor(document.getElementById('drone-text'), 'draw'),
             document.getElementById('exampleimg')
@@ -66,7 +76,7 @@
             endSocket: 'top',
             endPlug: 'behind'
         });
-    </script>
+    </script> -->
     <!-- <script>
         // This tween will rotate an element with a class of .my-element
         gsap.to('.myname', {
