@@ -79,7 +79,7 @@ p, li{
     flex-direction: column;
     align-items: start;
 }
-.text-content p, li, a {
+.text-content p, .text-content li{
     font-size: 1.4vw;
     color: black;
 }
@@ -99,6 +99,10 @@ p, li{
     border-right: none;
     border-left: 2px solid black;
     background-color: #121416;
+}
+.ai-use a {
+    color: black;
+    font-size: 1.3vw;
 }
 .ai-use img {
     max-height: 32vw;
