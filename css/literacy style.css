@@ -70,9 +70,18 @@
     font-weight: 600;
     padding-bottom: 20px;
 }
-p {
+p, li{
     color: black;
     font-size: 1.3vw;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.text-content p, li, a {
+    font-size: 1.4vw;
+    color: black;
 }
 .html-css .img {
     border-right: none;
