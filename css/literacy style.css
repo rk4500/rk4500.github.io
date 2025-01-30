@@ -57,7 +57,7 @@
 .img img {
     height: max-content;
     width: max-content;
-    max-height: 75%;
+    max-height: 35vw;
 }
 .info {
     max-width: 60%;
@@ -77,10 +77,22 @@ p {
 .html-css .img {
     border-right: none;
     border-left: 2px solid black;
-    width: 50%
+    width: 50%;
+    background-color: #181818;
 }
 .html-css .info{
     max-width: 50%;
+}
+.comp-thinking .img{
+    background-color: #005AFF;
+}
+.ai-use .img {
+    border-right: none;
+    border-left: 2px solid black;
+    background-color: #121416;
+}
+.ai-use img {
+    max-height: 32vw;
 }
 @media (max-width: 900px) {
     .maintext {
